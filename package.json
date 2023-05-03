@@ -5,6 +5,6 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "start": "ts-node ./ejercicio4.ts"
+    "start": "ts-node ./ejercicio5.ts"
 }
 }
