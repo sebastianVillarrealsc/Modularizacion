@@ -1,9 +1,18 @@
-// suma de dos numeros //
+import * as readlineSync from 'readline-sync';
 
-import * as readlineSync from "readline-sync";
-let primerNumero:number= readlineSync.questionInt("ingrese primer numero");
-console.log("el primer numero es",primerNumero);
-let segundoNumero:number=readlineSync.questionInt("ingrese segundo numero");
-console.log("el segundo numero es", segundoNumero);
-export let resultado:number=primerNumero+segundoNumero
-console.log ("el resultado es " , resultado);
+export function sumaEntreNumeros(): number {
+  const num1: number = readlineSync.questionInt('Ingrese el primer número: ');
+  const num2: number = readlineSync.questionInt('Ingrese el segundo número: ');
+
+  let sum: number = 0;
+  const start: number = Math.min(num1, num2);
+  const end: number = Math.max(num1, num2);
+
+  for (let i = start; i <= end; i++) {
+    sum += i;
+  }
+
+  return sum;
+}
+
+console.log(`La suma de los números entre los dos números ingresados es: ${sumaEntreNumeros()}`);
