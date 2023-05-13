@@ -4,8 +4,10 @@ import { cantidadDeDivisores } from "./ejercicio3";
 import{sumaEntreNumeros}from "./ejercicio4";
 import{verificarClave}from "./ejercicio5";
 
+
 calcularPotencia();
 esMultiplo;
 cantidadDeDivisores;
 sumaEntreNumeros;
 verificarClave();
+
